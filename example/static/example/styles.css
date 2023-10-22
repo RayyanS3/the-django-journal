@@ -1,11 +1,11 @@
 .main-text {
   font-size: larger;
-  color: blueviolet;
+  color: rgb(27, 255, 2);
   font-weight: bold;
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: rgb(111, 67, 0);
   align-items: center;
   align-content: center;
   text-align: center;
