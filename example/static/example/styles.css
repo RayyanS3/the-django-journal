@@ -1,0 +1,12 @@
+.main-text {
+  font-size: larger;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+body {
+  background-color: blanchedalmond;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
