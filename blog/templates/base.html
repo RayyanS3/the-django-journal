@@ -9,9 +9,11 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% block custom_css %}{% endblock %}
-    <link rel="stylesheet" href="{% static "blog/app.css" %}" /> 
+    <link rel="stylesheet" href="{% static "blog/styles/app.css" %}" /> 
   </head>
   <body>
-    {% block pg_content %}Default content{% endblock %}
+    {% include "partials/navigation.html" %}
+    {% block pg_content %}
+    {% endblock %}
   </body>
 </html>

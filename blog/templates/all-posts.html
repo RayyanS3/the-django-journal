@@ -1,0 +1,22 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block pg_title %} All Posts {% endblock %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'blog/styles/all-posts.css' %}"/>
+{% endblock %}
+
+{%block pg_content %} 
+<section>
+
+    <h2>My Collected Posts</h2>
+
+    <ul>
+        <li>
+            <article></article>
+        </li>
+    </ul>
+
+</section>
+{% endblock %}
