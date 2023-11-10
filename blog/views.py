@@ -4,7 +4,7 @@ def home_page(request):
     return render(request, 'home.html')
 
 def posts(request):
-    pass
+    return render(request, 'all-posts.html')
 
 def post_page(request):
     pass
