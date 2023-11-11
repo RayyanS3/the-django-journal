@@ -22,7 +22,10 @@
     <h2>Latest thoughts</h2>
 
     <ul>
+        {% for post in posts %}
         {% include "partials/post.html" %}
+        {% endfor %}
+
     </ul>
 </section>
 

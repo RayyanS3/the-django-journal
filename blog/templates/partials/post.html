@@ -1,11 +1,13 @@
+{% load static %}
+
 <li>
     <article class="post">
-        <a href="{% url 'post_details' 'the-mountains' %}">
-            {% comment %} <img src="{% static "blog/images/mountains.jpg" %}" alt="" /> {% endcomment %}
+        <a href="{% url 'post_details' post.slug %}">
+            <img src="{% static "blog/images/"|add:post.image %}" alt="{{post.title}}" />
             <div class="post__content">
-                <h3>Mountain hiking</h3>
+                <h3>{{ post.title }}</h3>
                 <p>
-                    Nestled within the heart of the Canadian Rockies, Banff National Park stands as an emblem of nature's grandeur, offering hikers a mosaic of scenic trails that promise adventure and serenity in equal measure.
+                    {{post.excerpt}}
                 </p>
             </div>
         </a>

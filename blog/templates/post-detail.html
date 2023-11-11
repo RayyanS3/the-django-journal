@@ -1,26 +1,28 @@
 {% extends "base.html" %} 
 {% load static %}
 
-{% block pg_title %} This Post Title {% endblock %}
+{% block pg_title %} {{this_post.title}} {% endblock %}
 
 {% block custom_css %}
-    <link rel="stylesheet" href="{% static 'blog/styles/all-posts.css' %}"/>
-    <link rel="stylesheet" href="{% static 'blog/styles/post.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/styles/post-details.css' %}"/>
+
 {% endblock %}
 
 {%block pg_content %} 
-    <section>
-        <h2>Post Title</h2>
-        <img src="" alt="" />
-        <address>By Rayyan</address>
+    <section id="summary">
+        <h2>{{this_post.title}}</h2>
+        <article>
+        <img src="{% static "blog/images/"|add:this_post.image %}" alt="{{this_post.title}}" />
+        <address>{{this_post.author}}</address>
         <div>
-            Last updated on <time>July 10th</time>
+            Last updated on <time>{{this_post.date|date:"d M Y"}}</time>
         </div>
+    </article>
     </section>
 
     <main>
         <p>
-            A B C D ...
+            {{this_post.content|linebreaks}}
         </p>
     </main>
 {% endblock %}
