@@ -1,0 +1,26 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block pg_title %} This Post Title {% endblock %}
+
+{% block custom_css %}
+    <link rel="stylesheet" href="{% static 'blog/styles/all-posts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/styles/post.css' %}"/>
+{% endblock %}
+
+{%block pg_content %} 
+    <section>
+        <h2>Post Title</h2>
+        <img src="" alt="" />
+        <address>By Rayyan</address>
+        <div>
+            Last updated on <time>July 10th</time>
+        </div>
+    </section>
+
+    <main>
+        <p>
+            A B C D ...
+        </p>
+    </main>
+{% endblock %}
