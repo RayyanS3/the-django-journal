@@ -1,5 +1,5 @@
 body {
-    background-color: #e7e7e7;
+    background-color: #ce2525;
   }
   
   #main-navigation {
@@ -20,6 +20,10 @@ body {
     margin: 3rem 0;
   }
   
+  #all-posts li{
+    background-color: #390281;
+  }
+
   ul {
     list-style: none;
     margin: 0;

@@ -5,19 +5,19 @@
 
 {% block custom_css %}
     <link rel="stylesheet" href="{% static 'blog/styles/all-posts.css' %}"/>
+    <link rel="stylesheet" href="{% static 'blog/styles/post.css' %}"/>
 {% endblock %}
 
 {%block pg_content %} 
 <section id="all-posts">
     <h2>My Collected Posts</h2>
-
     <ul>
         {% include "partials/post.html" %}
         {% include "partials/post.html" %}
         {% include "partials/post.html" %}
         {% include "partials/post.html" %}
         {% include "partials/post.html" %}
+        {% include "partials/post.html" %}
     </ul>
-
 </section>
 {% endblock %}
